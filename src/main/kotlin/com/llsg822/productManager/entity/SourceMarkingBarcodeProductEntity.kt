@@ -4,10 +4,10 @@ import jakarta.persistence.*
 
 @Entity
 @Table(
-    name = "source_marking_barcode",
+    name = "source_marking_barcode_product",
     uniqueConstraints = [UniqueConstraint(columnNames = ["barcode"])]
 )
-class SourceMarkingBarcodeEntity(
+class SourceMarkingBarcodeProductEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id")
